@@ -1,9 +1,13 @@
 {% extends 'base.html' %}
  
 {% block content %}
-    <h1>Delete post</h1>
+<div class = "ertt">
+    <h2>Видалити пост</h2>
+  </div>
     <form action="" method="post">{% csrf_token %}
-      <p>Are you sure you want to delete "{{ post.title }}"?</p>
-      <input type="submit" value="Confirm" />
+      <div class = "rt">
+      <p>Ви впевнені, що хочете видалити"{{ post.title }}"?</p>
+    </div>
+      <button type="submit">Підтвердити</button>
     </form>
 {% endblock content %}

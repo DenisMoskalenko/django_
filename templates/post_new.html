@@ -2,9 +2,11 @@
 {% extends 'base.html' %}
  
 {% block content %}
-    <h1>New post</h1>
+<div class = "ertt">
+    <h2>Новий пост</h2>
+  </div>
     <form action="" method="post">{% csrf_token %}
       {{ form.as_p }}
-      <input type="submit" value="Save" />
+      <button type="submit">Зберегти</button> 
     </form>
 {% endblock content %}
